@@ -61,3 +61,19 @@ test "Largest Product in Series of thirteen adjancent" {
 }
 
 // zig test ./exercises/project-euler/euler8.zig
+
+// Test [1/2] test.Largest Product in Series of four adjancent...
+// digits = 4
+// index = 997
+// last_index = 996
+// largest_product = 5832
+// largest_product_nums = { 9, 9, 8, 9 }
+
+// Test [2/2] test.Largest Product in Series of thirteen adjancent...
+// digits = 13
+// index = 988
+// last_index = 987
+// largest_product = 23514624000
+// largest_product_nums = { 5, 5, 7, 6, 6, 8, 9, 6, 6, 4, 8, 9, 5 }
+
+// All 2 tests passed.

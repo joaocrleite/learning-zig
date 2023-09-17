@@ -53,3 +53,11 @@ test "10001st prime" {
 }
 
 // zig test ./exercises/project-euler/euler7.zig
+
+// Test [1/3] test.3rd prime...
+//  5
+// Test [2/3] test.6th prime...
+//  13
+// Test [3/3] test.10001st prime...
+//  104743
+// All 3 tests passed.

@@ -45,3 +45,9 @@ test "Smallest Multiple 1 .. 20" {
 }
 
 // zig test ./exercises/project-euler/euler5.zig
+
+// Test [1/2] test.Smallest Multiple 1 .. 10...
+//  2520
+// Test [2/2] test.Smallest Multiple 1 .. 20...
+//  232792560
+// All 2 tests passed.
