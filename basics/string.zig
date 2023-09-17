@@ -17,10 +17,10 @@ pub fn main() !void {
     // char ascii table 65 equals letter A
     const b: u8 = 65;
 
-    // char ascii table 67 equals letter A
+    // char ascii table 99 equals letter c
     const c: u8 = 'c';
 
-    // char ascii table 67 equals letter A
+    // char ascii table 100 equals letter d
     const d: u8 = 'd';
 
     const w: [4]u8 = [4]u8{ a, b, c, d };
