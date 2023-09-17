@@ -21,3 +21,4 @@ pub fn main() !void {
 
 // zig run ./basics/string.zig
 // const a type:u8 letter:a
+// const b type:u8 letter:A
