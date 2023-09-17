@@ -45,14 +45,14 @@ test "sum of multiples of 3 or 5 below 1000" {
     try expect(result == 233_168);
 }
 
-test "sum of multiples below 10" {
+test "sum of custom multiples of 3 or 5 below 10" {
     const below: usize = 10;
     var multiples = [2]u8{ 3, 5 };
     const sum = find_sum_of_multiples(below, &multiples);
     try expect(sum == 23);
 }
 
-test "sum of multiples below 1000" {
+test "sum of custom multiples of 3 or 5 below 1000" {
     const below: usize = 1_000;
     var multiples = [2]u8{ 3, 5 };
     const sum = find_sum_of_multiples(below, &multiples);
