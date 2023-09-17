@@ -7,5 +7,8 @@
 Running in terminal
 `snap install zig`
 
+Set path
+`export PATH=$PATH:~/snap/bin/zig`
+
 # exec files in terminal
 `zig run filepath.zig`
