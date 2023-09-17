@@ -28,9 +28,7 @@ fn find_sum_of_multiples(below: usize, multiples: []u8) usize {
             }
         }
 
-        if (isMultiple) {
-            sum += i;
-        }
+        sum += if (isMultiple) i else 0;
     }
     return sum;
 }
