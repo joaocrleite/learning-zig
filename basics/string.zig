@@ -29,14 +29,14 @@ pub fn main() !void {
     // char ascii table 67 + 32 = 99(c)
     const c_low = c + 32;
 
-    const w: [4]u8 = [4]u8{ a, b, c, d };
+    const w: [6]u8 = [6]u8{ a, b, c, d, 'e', 102 };
     const wl = w.len;
 
     // undefined = 0
     // undefined array of 4 elements = [4]u8 = undefined = { undefined, undefined, undefined, undefined } = {0,0,0,0}
     // const w_up: [4]u8 = [4]u8{ 0, 0, 0, 0 };
     // const w_up: [4]u8 = [4]u8{ undefined, undefined, undefined, undefined };
-    var w_up: [4]u8 = undefined;
+    var w_up: [6]u8 = undefined;
     for (w, 0..) |w_letter, w_letter_index| {
         var ascii: u8 = w_letter;
         if (ascii >= 97 and ascii <= 122) {
@@ -45,7 +45,7 @@ pub fn main() !void {
         w_up[w_letter_index] = ascii;
     }
 
-    var w_low: [4]u8 = undefined;
+    var w_low: [6]u8 = undefined;
     for (w, 0..) |w_letter, w_letter_index| {
         var ascii: u8 = w_letter;
         if (ascii >= 65 and ascii <= 90) {
@@ -85,6 +85,6 @@ pub fn main() !void {
 // const c type:u8 ascii:67 letter:C
 // const c_low type:u8 ascii:99 letter:c
 // const d type:u8 ascii:100 letter:d
-// const w type:[4]u8 len:4 ascii:{ 97, 66, 67, 100 } word:aBCd
-// const w_up type:[4]u8 len:4 ascii:{ 65, 66, 67, 68 } word:ABCD
-// const w_low type:[4]u8 len:4 ascii:{ 97, 98, 99, 100 } word:abcd
+// const w type:[6]u8 len:6 ascii:{ 97, 66, 67, 100, 101, 102 } word:aBCdef
+// const w_up type:[6]u8 len:6 ascii:{ 65, 66, 67, 68, 69, 70 } word:ABCDEF
+// const w_low type:[6]u8 len:6 ascii:{ 97, 98, 99, 100, 101, 102 } word:abcdef
