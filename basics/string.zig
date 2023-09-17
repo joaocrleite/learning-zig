@@ -14,8 +14,8 @@ pub fn main() !void {
     // char ascii table 97 equals letter a
     const a: u8 = 97;
 
-    // char ascii table 65 equals letter A
-    const b: u8 = 65;
+    // char ascii table 66 equals letter B
+    const b: u8 = 66;
 
     // char ascii table 67 equals letter c
     const c: u8 = 'C';
@@ -81,10 +81,10 @@ pub fn main() !void {
 
 // zig run ./basics/string.zig
 // const a_up type:u8 ascii:65 letter:A
-// const b type:u8 ascii:65 letter:A
+// const b type:u8 ascii:66 letter:B
 // const c type:u8 ascii:67 letter:C
 // const c_low type:u8 ascii:99 letter:c
 // const d type:u8 ascii:100 letter:d
-// const w type:[4]u8 len:4 ascii:{ 97, 65, 67, 100 } word:aACd
-// const w_up type:[4]u8 len:4 ascii:{ 65, 65, 67, 68 } word:AACD
-// const w_low type:[4]u8 len:4 ascii:{ 97, 97, 99, 100 } word:aacd
+// const w type:[4]u8 len:4 ascii:{ 97, 66, 67, 100 } word:aBCd
+// const w_up type:[4]u8 len:4 ascii:{ 65, 66, 67, 68 } word:ABCD
+// const w_low type:[4]u8 len:4 ascii:{ 97, 98, 99, 100 } word:abcd
